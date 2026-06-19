@@ -50,7 +50,7 @@ while($row = $result->fetch_assoc())
     . "</p>";
 
     echo "<small>"
-    . $row["datum"]
+    . htmlspecialchars($row["datum"])
     . "</small>";
 
     echo "</div>";
